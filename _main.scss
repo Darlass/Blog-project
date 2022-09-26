@@ -1,0 +1,86 @@
+.text-one {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    border-left: 10px solid #e0e5ea;
+    padding-left: 15px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.about-company{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-text-one{
+    span{
+        font-weight: 700;
+    }
+    p{
+        color: #8d8f92;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;}
+}
+.social-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:1px;
+    padding: 0px;
+    margin-top: 50px;
+    li {
+        list-style-type: none;
+        width: 60px;
+        height: 60px;
+        background-color:#c7cdd0 ;
+        &:hover{
+            background-color:rgba(177, 177, 177, 0.5);
+            cursor: pointer;
+        }
+    }
+}
+.social-buttons{
+    .facebook{
+        background: url(images/face-but.png);
+        width: 50px;
+        height: 50px;
+    }
+    .twitter{
+        background: url(images/twit-butt.png);
+    }
+    .google{
+        background: url(images/g-but.png);
+    }
+    .ball{
+        background: url(images/ball-but.png);
+    }
+    .be{
+        background: url(images/be-butt.png);
+    }
+}
+.num{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #23b7a3;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.main-title{
+    display: flex;
+    flex-wrap: wrap;
+    h3 {
+        font-family: 'Quattrocento Sans', sans-serif;
+        text-transform: uppercase;
+        margin-left: 17px;
+    }
+}
+.column-text-two {
+    p {  
+        color: #8d8f92;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
