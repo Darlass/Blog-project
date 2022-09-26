@@ -158,17 +158,17 @@ header{
     font-weight: 600;
     padding: 5px;
     text-transform: uppercase;
-    border-style: transparent;
+    border: 3px solid transparent;
+    border-radius: 6px;
 }
 .menu a:hover{
     border:  2px solid #a4aead;
     border-radius: 6px;
     color:#a4aead ;
-    border-style: transparent;
 }
 .menu a:active{
     color: #23b7a3;
-    border-style: 2px solid #23b7a3 ;
+    border: 2px solid #23b7a3 ;
     border-radius: 6px;
 }
 .menu{
@@ -262,8 +262,26 @@ header{
     padding: 0px;
     margin-top: 50px;
 }
-.social-buttons .facebook{
-    background: url(images/face-but.png) no-repeat center;
+.social-buttons a{
+    .facebook{
+        background: url(images/face-but.png);
+    }
+    .twitter{
+        background: url(images/twit-butt.png);
+    }
+    .google{
+        background: url(images/g-but.png);
+    }
+    .ball{
+        background: url(images/ball-but.png);
+    }
+    .be{
+        background: url(images/be-butt.png);
+    }
+}
+.social-buttons li:hover{
+    background-color:rgba(177, 177, 177, 0.5);
+    cursor: pointer;
 }
 .social-buttons li{
     list-style-type: none;
@@ -281,9 +299,11 @@ header{
     justify-content: center;
     align-items: center;
     font-family: 'Quattrocento Sans', sans-serif;
+    
 }
 .main-title{
     display: flex;
+    flex-wrap: wrap;
 }
 .main-title h3 {
     font-family: 'Quattrocento Sans', sans-serif;
@@ -294,4 +314,9 @@ header{
     color: #8d8f92;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+}
+.social-buttons a .facebook {
+    height: 60px;
+    width: 60px;
+    background: url(images/facebook.png) no-repeat center;
 }
