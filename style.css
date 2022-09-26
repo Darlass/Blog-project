@@ -184,6 +184,40 @@ header {
   border: 2px solid #23b7a3;
 }
 
+.personal {
+  width: 263px;
+  height: 300px;
+}
+
+.information {
+  display: flex;
+  background-color: #e1e5e9;
+  width: 263px;
+  height: 74px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.information h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #292f36;
+  margin: 0px;
+}
+.information h4 {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  color: #8d8f92;
+}
+
+.photo {
+  display: flex;
+  width: 263px;
+  height: 300px;
+  flex-direction: row;
+}
+
 body {
   margin: 0;
 }
