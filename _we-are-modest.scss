@@ -37,25 +37,26 @@
             cursor: pointer;
         }
     }
+    a{
+        display: block;
+        width: 60px;
+        height: 60px;
 }
-.social-buttons{
-    .facebook{
-        background: url(images/face-but.png);
-        width: 50px;
-        height: 50px;
-    }
-    .twitter{
-        background: url(images/twit-butt.png);
-    }
-    .google{
-        background: url(images/g-but.png);
-    }
-    .ball{
-        background: url(images/ball-but.png);
-    }
-    .be{
-        background: url(images/be-butt.png);
-    }
+}
+.twitter{
+    background: url(images/twit-butt.png) no-repeat center;
+}
+.google{
+    background: url(images/g-but.png) no-repeat center;
+}
+.ball{
+    background: url(images/ball-but.png) no-repeat center;
+}
+.be{
+    background: url(images/be-butt.png) no-repeat center;
+} 
+.facebook{
+    background: url(images/face-but.png) no-repeat center;
 }
 .num{
     display: flex;

@@ -102,23 +102,30 @@ header {
   background-color: rgba(177, 177, 177, 0.5);
   cursor: pointer;
 }
+.social-buttons a {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
 
-.social-buttons .facebook {
-  background: url(images/face-but.png);
-  width: 50px;
-  height: 50px;
+.twitter {
+  background: url(images/twit-butt.png) no-repeat center;
 }
-.social-buttons .twitter {
-  background: url(images/twit-butt.png);
+
+.google {
+  background: url(images/g-but.png) no-repeat center;
 }
-.social-buttons .google {
-  background: url(images/g-but.png);
+
+.ball {
+  background: url(images/ball-but.png) no-repeat center;
 }
-.social-buttons .ball {
-  background: url(images/ball-but.png);
+
+.be {
+  background: url(images/be-butt.png) no-repeat center;
 }
-.social-buttons .be {
-  background: url(images/be-butt.png);
+
+.facebook {
+  background: url(images/face-but.png) no-repeat center;
 }
 
 .num {
@@ -261,6 +268,9 @@ body {
   .logo {
     text-align: center;
     margin: 15px;
+  }
+  .social-buttons {
+    margin-left: -20px;
   }
 }
 /* tablet(sm-small) */
