@@ -194,35 +194,90 @@ header {
 .personal {
   width: 263px;
   height: 300px;
+  position: relative;
 }
 
 .information {
-  display: flex;
   background-color: #e1e5e9;
   width: 263px;
   height: 74px;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 .information h3 {
-  text-transform: uppercase;
   font-size: 16px;
+  text-transform: uppercase;
   font-family: "Quattrocento Sans", sans-serif;
   color: #292f36;
-  margin: 0px;
+  padding-left: 10px;
+  padding-top: 21px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 .information h4 {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   margin: 0px;
   color: #8d8f92;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .photo {
-  display: flex;
   width: 263px;
   height: 300px;
-  flex-direction: row;
+}
+
+.team-social-buttons {
+  display: flex;
+  height: 30px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.team-social-buttons a {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.team-social-buttons li {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #39454d;
+  margin-left: 2px;
+  list-style-type: none;
+}
+.team-social-buttons .team-twitter {
+  background: url(images/team-twit.png) no-repeat center;
+}
+.team-social-buttons .team-facebook {
+  background: url(images/team-face.png) no-repeat center;
+}
+.team-social-buttons .team-inl {
+  background: url(images/team-inl.png) no-repeat center;
+}
+.team-social-buttons li:hover {
+  background-color: #4e5962;
+}
+
+.information:hover {
+  background-color: #3a454d;
+}
+.information:hover h3, .information:hover h4 {
+  color: #fff;
+}
+
+.personal:hover .team-social-buttons li {
+  display: block;
+}
+
+.personal:hover .information {
+  background-color: #39454d;
+}
+.personal:hover .information h3, .personal:hover .information h4 {
+  color: #ffffff;
 }
 
 body {
@@ -272,6 +327,9 @@ body {
   .social-buttons {
     margin-left: -20px;
   }
+  .personal {
+    margin-bottom: 90px;
+  }
 }
 /* tablet(sm-small) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -308,6 +366,12 @@ body {
   .search input {
     width: 65px;
   }
+  .row {
+    flex-wrap: wrap;
+  }
+  .personal {
+    margin-bottom: 90px;
+  }
 }
 /* laptop(md-medium) */
 @media (min-width: 992px) and (max-width: 1119px) {
@@ -318,7 +382,7 @@ body {
     flex: 0 0 16.66667%;
     width: 16.66667%;
   }
-  .col-lg-3 {
+  .col-md-3 {
     flex: 0 0 25%;
     width: 25%;
   }

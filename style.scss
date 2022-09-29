@@ -51,6 +51,9 @@ body{
     .social-buttons {
         margin-left: -20px;
     }
+    .personal{
+        margin-bottom: 90px;
+    }
 }
 
 /* tablet(sm-small) */
@@ -86,6 +89,12 @@ body{
     .search input{
         width: 65px;
     }
+    .row{
+        flex-wrap: wrap;
+    }
+    .personal{
+        margin-bottom: 90px;
+    }
 }
 
 /* laptop(md-medium) */
@@ -95,7 +104,7 @@ body{
         flex: 0 0 16.66667%;
         width: 16.66667%;
     }
-    .col-lg-3{
+    .col-md-3{
         flex: 0 0 25%;
         width: 25%;
     }
