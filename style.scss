@@ -65,6 +65,13 @@ body{
         width: 270px;
         height: 205px;
     }
+    .form-stay-in-touch{
+        width: 300px;
+        height: 200px;
+        input {
+            width: 190px;
+        }
+    }
 }
 
 
@@ -119,6 +126,13 @@ body{
         width: 270px;
         height: 205px;
     }
+    .form-stay-in-touch{
+        width: 450px;
+        height: 200px;
+        input {
+            width: 190px;
+        }
+    }
 }
 
 /* laptop(md-medium) */
@@ -160,6 +174,18 @@ body{
     }
     .search input{
         width: 100px;
+    }
+    .form-stay-in-touch{
+        width: 450px;
+        height: 200px;
+        input {
+            width: 190px;
+        }
+    }
+    .part-features img{
+        // w360 h240
+        width: 300px;
+        height: 200px;
     }
 }
 
@@ -213,3 +239,11 @@ body{
     height: 1px;
     background-color: #a4aead;
 }
+/* .footer{
+    background-color: #39454d;
+    width: 100%;
+    p{
+        color:#f3f4f5;
+    }
+}*/
+
