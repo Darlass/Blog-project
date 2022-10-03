@@ -1,0 +1,24 @@
+.features{
+    background-color: #39454d;
+    padding: 80px 0px 40px 0px;
+
+}
+.flex-features{
+    display: flex;
+    flex-wrap: wrap;
+}
+.part-features{
+    h4{
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 20px 0px 10px 0px;
+    }
+    p{
+        color: #8d8f92;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+}

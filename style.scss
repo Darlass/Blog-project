@@ -6,6 +6,9 @@
 @import "./_slider.scss";
 @import "./_meet-the-team.scss";
 @import "./_lovely-work.scss";
+@import "./_what-we-do.scss";
+@import "./_features.scss";
+@import "./_stay-in-touch.scss";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Quattrocento+Sans:wght@700&display=swap');
 body{
     margin: 0;
@@ -20,8 +23,7 @@ body{
     margin-left: -15px;
     margin-right: -15px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
       
 }
@@ -55,7 +57,16 @@ body{
     .personal{
         margin-bottom: 90px;
     }
+    .photos img{
+        width: 270px;
+        height: 205px;
+    }
+    .part-features img{
+        width: 270px;
+        height: 205px;
+    }
 }
+
 
 /* tablet(sm-small) */
 @media(min-width:768px) and (max-width:991px){
@@ -100,6 +111,14 @@ body{
     .personal{
         margin-bottom: 90px;
     }
+    .photos img{
+        width: 270px;
+        height: 205px;
+    }
+    .part-features img{
+        width: 270px;
+        height: 205px;
+    }
 }
 
 /* laptop(md-medium) */
@@ -120,6 +139,10 @@ body{
     .col-md-5{
         flex: 0 0 41.66667%;
         width: 41.66667%;
+    }
+    .col-md-6{
+        flex: 0 0 50%;
+        width: 50%;
     }
     .col-md-7{
         flex: 0 0 58.33333%;
@@ -159,6 +182,10 @@ body{
         flex: 0 0 41.66667%;
         width: 41.66667%;
     }
+    .col-lg-6{
+        flex: 0 0 50%;
+        width: 50%;
+    }
     .col-lg-7{
         flex: 0 0 58.33333%;
         width: 58.33333%;
@@ -180,7 +207,6 @@ body{
     .search input{
         width: 155px;
     }
-    
 }
 .line{
     width: 100%;
