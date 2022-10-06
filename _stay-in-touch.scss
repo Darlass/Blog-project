@@ -16,8 +16,7 @@
     background-color: #fff;
     width: 555px;
     height: 380px;
-    position: absolute;
-    top: 300px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -71,7 +70,4 @@
         flex-direction: column;
     }
     
-}
-.stay-in-touch{
-    position: relative;
 }

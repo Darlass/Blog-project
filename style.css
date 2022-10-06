@@ -406,8 +406,7 @@ header {
   background-color: #fff;
   width: 555px;
   height: 380px;
-  position: absolute;
-  top: 300px;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -460,10 +459,6 @@ header {
 }
 .form-stay-in-touch textarea {
   flex-direction: column;
-}
-
-.stay-in-touch {
-  position: relative;
 }
 
 body {
@@ -645,6 +640,9 @@ body {
     width: 300px;
     height: 200px;
   }
+  .form-stay-in-touch {
+    top: -127px;
+  }
 }
 /* desktop(lg-large) */
 @media (min-width: 1200px) {
@@ -691,6 +689,9 @@ body {
   }
   .search input {
     width: 155px;
+  }
+  .form-stay-in-touch {
+    top: -127px;
   }
 }
 .line {
