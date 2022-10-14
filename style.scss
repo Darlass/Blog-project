@@ -24,8 +24,7 @@ body{
     margin-right: -15px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-      
+    align-items: center;     
 }
 [class*="col-"]{
     padding-left: 15px;
@@ -40,8 +39,9 @@ body{
     .row{
         flex-wrap: wrap;
     }
-    .menu{
-        overflow-x: scroll;
+    .col-xs-6{
+        flex: 0 0 50%;
+        width: 50%;
     }
     .col-xs-12{
         flex: 0 0 100%;
@@ -70,6 +70,76 @@ body{
         height: 200px;
         input {
             width: 190px;
+        }
+    }
+    .mobile-menu{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 15px;
+        height: 15px;
+        position: relative;
+        span{
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            transition: .25s ease-in-out;
+            &:nth-child(1){
+                top: 3px;
+            }
+            &:nth-child(2){
+                top: 7px;
+            }
+            &:last-child{
+                bottom: 3px;
+            }
+        }    
+        &.active-menu{
+            span{
+                &:nth-child(1){
+                    top: 50%;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    top: 50%;
+                    transform: rotate(-45deg);
+                }
+                &:last-child{
+                    transform: scale(0);
+                }
+            }
+        }  
+    }
+    .menu{
+        position: fixed;
+        top:0;
+        bottom: 0;
+        right: 0;
+        max-width: 260px;
+        width: 260px;
+        transform: translateX(150%);
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        &.active-menu{
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);            
+            background-color: #1d2126;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            & li {
+                text-align: center;
+                padding: 10px;
+            }
+            & li:nth-child(1){
+                padding-top: 40px;
+            }
+        }
+        ul{
+            flex-direction: column;
         }
     }
 }
